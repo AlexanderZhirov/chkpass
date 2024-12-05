@@ -1,0 +1,22 @@
+{
+    "name": "chkpass",
+    "authors": [
+        "Alexander Zhirov <alexander@zhirov.kz>"
+    ],
+    "license": "GPL-2.0",
+    "copyright": "© Alexander Zhirov, 2024",
+    "description": "Checking and changing the user's password using the PAM library and its modules",
+    "targetPath": "bin",
+    "targetType": "executable",
+    "dependencies": {
+        "singlog": "~>0.5.0",
+        "readconf": "~>0.4.1",
+        "commandr": "~>1.1.0"
+    },
+    "libs": [
+        "pam"
+    ],
+    "preBuildCommands": [
+        "./install-debian-dependencies.sh"
+    ]
+}
